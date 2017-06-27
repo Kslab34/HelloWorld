@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+Kelby Schulz
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <?php
+        $greeting = "PHP IS FUN!";
+        echo"<br>";
+        $daysOfWeek = array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        echo $greeting;
+        echo "<br>";
+        print_r($daysOfWeek);
+        echo "<br>";
+        echo "The days of the week are: ";
+        echo "<br>";
+        //for ($int = 0; $int < sizeof($daysOfWeek); $int++) {
+
+        for ($val = 0; $val < 7; $val++) {
+            //echo "Hello";
+            echo "<br>";
+            echo $daysOfWeek[$val];
+            echo ", ";
+        }
+        echo "<br>";
+
+
+        echo"<br>";
+        $int1 = 5;
+        $int2 = "5";
+
+        echo $int1 + $int2;
+        echo"<br>";
+        echo "$int1" . "$int2";
+        echo"<br>";
+
+        echo 'Is $int1 instance of int = ';
+        if (is_int($int1)) {
+            echo "true";
+        } else {
+            echo "false";
+        }
+
+        echo"<br>";
+
+        echo 'Is $int2 instance of string = ';
+        if (is_string($int2)) {
+            echo "true";
+        } else {
+            echo "false";
+        }
+
+
+        echo"<br>";
+
+
+        echo 'Is $int1 equal to $int2 = ';
+        if ($int1 == $int2) {
+            echo "true";
+        } else {
+            echo"false";
+        }
+
+        echo"<br>";
+        ?>
+    </body>
+</html>
